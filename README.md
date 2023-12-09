@@ -7,7 +7,7 @@
  
  - A seprated network for the database `backend` so no other container has access to the nginx database.
  - `frontend` network for the container to be exposed to internet for proper proxy. 
- - `container_name` is added, `nginix-proxy-manger` labelled as `nginx-app` and `mariadb-aria` is labelled you can choose to rename for your deploy.
+ - `container_name` is added, `nginix-proxy-manger` labelled as `nginx-app` and `mariadb-aria` is labelled as `nginx-db`, you can choose to rename for your deploy.
  <br><br>
 
 ## Deployment
@@ -82,3 +82,4 @@ Password:   changeme
 - Change the `DB_MYSQL_PASSWORD=` to a secure password
 - Change the `MYSQL_ROOT_PASSWORD=` to a secure password
 - Create the external network `frontend` before deployment otherwise it will not find the network and docker will error out.
+- For more documentation go to the [Nginx Proxy Manager Docs](https://nginxproxymanager.com/guide/)
