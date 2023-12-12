@@ -67,7 +67,7 @@ services:
 ```bash
 docker network create -d bridge frontend
 ```
-3. Run `docker compose up -d` in the directory of the docker compose with terminial
+3. Run `docker compose up -d` in the directory of the docker compose with terminal
 
 4. Connect to your instance by connecting to the port `81` for admin controls. `127.0.0.1:81`
 5. the default login is:
